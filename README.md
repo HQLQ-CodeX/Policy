@@ -4,14 +4,14 @@ Static privacy policy pages for Google Play listings.
 
 ## Google Play URLs
 
-- Behocngoaingu: `https://hqlq-codex.github.io/Policy/privacy/behocngoaingu.html`
-- Behocvui: `https://hqlq-codex.github.io/Policy/privacy/behocvui.html`
-- BestFlagQuiz: `https://hqlq-codex.github.io/Policy/privacy/bestflagquiz.html`
-- CapitalQuiz: `https://hqlq-codex.github.io/Policy/privacy/capitalquiz.html`
-- MapQuiz: `https://hqlq-codex.github.io/Policy/privacy/mapquiz.html`
-- Tiengdongvat: `https://hqlq-codex.github.io/Policy/privacy/tiengdongvat.html`
-- TiengNhaccu: `https://hqlq-codex.github.io/Policy/privacy/tiengnhaccu.html`
-- Carlogoquiz: `https://hqlq-codex.github.io/Policy/privacy/carlogoquiz.html`
+- Bé Học Tiếng Anh bằng Flashcard: `https://hqlq-codex.github.io/Policy/privacy/behocngoaingu.html`
+- Funny Flashcards for Kids: `https://hqlq-codex.github.io/Policy/privacy/behocvui.html`
+- Funny flag quiz: `https://hqlq-codex.github.io/Policy/privacy/bestflagquiz.html`
+- Funny capital quiz: `https://hqlq-codex.github.io/Policy/privacy/capitalquiz.html`
+- New Country Map Quiz: `https://hqlq-codex.github.io/Policy/privacy/mapquiz.html`
+- Real animal sound for kids: `https://hqlq-codex.github.io/Policy/privacy/tiengdongvat.html`
+- Music instrument sounds World: `https://hqlq-codex.github.io/Policy/privacy/tiengnhaccu.html`
+- Funny cars and logos quiz: `https://hqlq-codex.github.io/Policy/privacy/carlogoquiz.html`
 
 ## Deployment
 
