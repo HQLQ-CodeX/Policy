@@ -18,3 +18,12 @@ Static privacy policy pages for Google Play listings.
 Enable GitHub Pages for this repository using branch `main` and folder `/`.
 
 `app-ads.txt` is included at `/app-ads.txt` inside this project site. For AdMob app-ads.txt verification, the same file must be available at the root of the developer website domain configured in Google Play.
+
+## Google Play checklist
+
+- Put the exact app-specific privacy policy URL in each Play Console store listing.
+- Add the same URL inside each app, preferably in a visible privacy/about/settings screen.
+- Do not use a PDF, editable document, login page, redirect-only page, or generic page with multiple unrelated policies as the listing URL.
+- Keep the Play Console developer name aligned with the policy developer name: `SUNSKY`.
+- Keep Play Console Data safety answers aligned with these policies, especially Google AdMob data handling: device IDs, app activity, ad interactions, diagnostics, approximate location, and app performance.
+- Keep child-directed ad requests enabled and maximum ad content rating set to `G` for child-directed apps.
