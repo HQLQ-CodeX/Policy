@@ -11,6 +11,7 @@ Static privacy policy pages for Google Play listings.
 - New Country Map Quiz: `https://hqlq-codex.github.io/Policy/privacy/mapquiz.html`
 - Real animal sound for kids: `https://hqlq-codex.github.io/Policy/privacy/tiengdongvat.html`
 - Music instrument sounds World: `https://hqlq-codex.github.io/Policy/privacy/tiengnhaccu.html`
+- Musical Instruments 2: `https://hqlq-codex.github.io/Policy/privacy/tiengnhaccu2.html`
 - Funny cars and logos quiz: `https://hqlq-codex.github.io/Policy/privacy/carlogoquiz.html`
 
 ## Deployment
