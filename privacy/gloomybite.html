@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - GloomyBite</title>
+  <meta name="description" content="Privacy Policy for GloomyBite companion and emotional diary application.">
+  <style>
+    :root {
+      --bg-color: #faf7f5;
+      --card-bg: #ffffff;
+      --text-main: #2d2926;
+      --text-muted: #6b635b;
+      --primary: #9e6b63;
+      --primary-light: #f5ebe6;
+      --border-color: #ede5df;
+      --callout-bg: #fdf6f0;
+      --accent-green: #4a7c59;
+      --accent-green-bg: #eaf3ed;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      --radius: 14px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #1a1715;
+        --card-bg: #24201d;
+        --text-main: #ede8e3;
+        --text-muted: #a89f97;
+        --primary: #d4a59d;
+        --primary-light: #362825;
+        --border-color: #38322e;
+        --callout-bg: #2e2622;
+        --accent-green: #82b992;
+        --accent-green-bg: #1c2b20;
+        --shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 24px 16px 60px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--card-bg);
+      color: var(--primary);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.3;
+    }
+
+    .meta-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .meta-info span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .summary-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .summary-card .icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .summary-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--text-main);
+    }
+
+    .summary-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    article {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--primary);
+      padding-bottom: 6px;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 18px 0 8px;
+      color: var(--text-main);
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 0 0 16px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    .callout {
+      background: var(--callout-bg);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin: 18px 0;
+      font-size: 14.5px;
+    }
+
+    .callout.green {
+      background: var(--accent-green-bg);
+      border-left-color: var(--accent-green);
+    }
+
+    .callout ul {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 10px 14px;
+      text-align: left;
+      border: 1px solid var(--border-color);
+    }
+
+    th {
+      background: var(--primary-light);
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .lang-content {
+      display: none;
+    }
+
+    .lang-content.active {
+      display: block;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        padding: 0;
+      }
+      header, article, .summary-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+      }
+      .lang-switcher {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="top-bar">
+        <div class="brand">
+          <span class="brand-badge">GloomyBite</span>
+          <span style="font-size: 14px; color: var(--text-muted);">by HQL Global</span>
+        </div>
+        <div class="lang-switcher" role="tablist">
+          <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')" aria-label="English">English</button>
+          <button class="lang-btn" id="btn-vi" onclick="setLanguage('vi')" aria-label="Tiếng Việt">Tiếng Việt</button>
+        </div>
+      </div>
+      <div>
+        <h1 id="title-text">Privacy Policy</h1>
+        <div class="meta-info">
+          <span>📅 Effective Date: October 11, 2026</span>
+          <span>🔄 Last Updated: October 11, 2026</span>
+          <span>✉️ <a href="mailto:privacy@hqlglobal.com">privacy@hqlglobal.com</a></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- HIGHLIGHT SUMMARY CARDS -->
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="icon">🔒</div>
+        <h3 id="card1-title">Local & Secure Storage</h3>
+        <p id="card1-desc">Your journal entries and audio transcripts are saved securely on your device (iOS Keychain & secure sandbox).</p>
+      </div>
+      <div class="summary-card">
+        <div class="icon">🚫</div>
+        <h3 id="card2-title">Zero Data Selling</h3>
+        <p id="card2-desc">We never sell personal reflections or voice notes to third parties, nor use them to train public AI models.</p>
+      </div>
+      <div class="summary-card">
+        <div class="icon">🛡️</div>
+        <h3 id="card3-title">Complete User Control</h3>
+        <p id="card3-desc">Toggle AI consent, withdraw ad consent, export, or permanently delete your diary anytime in Settings.</p>
+      </div>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="content-en" class="lang-content active">
+      <article>
+        <section>
+          <h2>1. Introduction</h2>
+          <p>Welcome to <strong>GloomyBite</strong>, developed by <strong>HQL Global</strong> ("we", "our", or "us"). GloomyBite is a personal companion and emotional diary application designed to help you unwind, express your thoughts, and track your feelings with your pet companion, Momo.</p>
+          <p>We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what information we collect, how it is used, and the choices you have regarding your data when using the GloomyBite mobile application on iOS and Android.</p>
+        </section>
+
+        <section>
+          <h2>2. Information We Collect</h2>
+          <h3>A. Information You Provide Directly</h3>
+          <ul>
+            <li><strong>Voice Notes & Audio Recordings:</strong> When you use the voice note feature, we request access to your device's microphone. Your audio is recorded only during your active interaction. Depending on your platform, audio transcription may be processed locally or via system speech recognition services (Apple Speech Recognition / Android Speech Services). You always have the opportunity to review or discard text before saving.</li>
+            <li><strong>Journal & Companion Dialogue:</strong> Your reflections, diary logs, and messages exchanged with Momo. This data is primarily stored locally on your device in secure storage.</li>
+            <li><strong>User Preferences:</strong> Settings including AI conversation consent, reminder schedules, and theme preferences.</li>
+          </ul>
+
+          <h3>B. Information Collected Automatically</h3>
+          <ul>
+            <li><strong>Analytics Data:</strong> We use privacy-conscious analytics (<a href="https://posthog.com" target="_blank" rel="noopener">PostHog</a>) to understand application performance, feature engagement, and crash diagnostics. This data is collected without linking to your real-world identity.</li>
+            <li><strong>Device & Technical Information:</strong> Operating system version, device model, app version, language, and network connection type.</li>
+          </ul>
+
+          <h3>C. Advertising Data (Google AdMob)</h3>
+          <ul>
+            <li>GloomyBite displays advertisements served by <strong>Google Mobile Ads (AdMob)</strong>.</li>
+            <li>We utilize Google's <strong>User Messaging Platform (UMP)</strong> to present consent options regarding personalized ads in applicable jurisdictions (including the EEA, UK, and Switzerland).</li>
+            <li>AdMob may collect pseudonymous identifiers (such as IDFA on iOS if tracking is authorized, or Advertising ID on Android) and ad interaction data to provide and measure advertising.</li>
+            <li>You can adjust your ad privacy choices at any time directly within <strong>Settings > Ad Privacy</strong> inside GloomyBite.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. How We Use Your Information</h2>
+          <p>We use the collected information solely to:</p>
+          <ol style="margin-left: 20px; margin-bottom: 16px;">
+            <li>Provide, maintain, and enhance the GloomyBite companion and journaling experience.</li>
+            <li>Transcribe voice input into text for your personal review.</li>
+            <li>Schedule local pet reminders and widget updates.</li>
+            <li>Diagnose crashes, maintain security, and optimize app performance.</li>
+            <li>Deliver non-intrusive advertisements subject to your consent choices.</li>
+          </ol>
+
+          <div class="callout green">
+            <strong>Our Commitment to You:</strong>
+            <ul>
+              <li>We <strong>DO NOT</strong> sell your personal diary entries or voice recordings to third parties.</li>
+              <li>We <strong>DO NOT</strong> use your intimate journal reflections to train public AI models.</li>
+              <li>We <strong>DO NOT</strong> access your microphone without your explicit action.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>4. Third-Party Services & Frameworks</h2>
+          <p>GloomyBite integrates the following trusted third-party service providers:</p>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Provider</th>
+                  <th>Purpose</th>
+                  <th>Privacy Reference</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Google Mobile Ads (AdMob & UMP)</strong></td>
+                  <td>Ad delivery and consent management</td>
+                  <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+                </tr>
+                <tr>
+                  <td><strong>PostHog</strong></td>
+                  <td>Privacy-friendly product diagnostics and analytics</td>
+                  <td><a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog Privacy Policy</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Apple Speech & Google Speech</strong></td>
+                  <td>Voice-to-text conversion</td>
+                  <td>Operating System Native Frameworks</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>5. Data Storage, Retention, and Security</h2>
+          <ul>
+            <li><strong>Local Storage:</strong> Your journal entries and widget snapshots reside in protected device storage (iOS Keychain / App Group sandbox, and Android secure app storage).</li>
+            <li><strong>Network Security:</strong> All network transmissions between GloomyBite and our backend servers utilize encrypted Transport Layer Security (HTTPS/TLS). Cleartext HTTP is strictly disabled.</li>
+            <li><strong>Data Deletion:</strong> You can delete your local journal entries, reset Momo's memory, or revoke AI consent at any time via the in-app <strong>Settings</strong> menu.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>6. Children's Privacy</h2>
+          <p>GloomyBite is designed for general audiences and is not directed towards children under the age of 13 (or under 16 in certain jurisdictions). We do not knowingly collect personally identifiable information from children.</p>
+        </section>
+
+        <section>
+          <h2>7. Your Rights and Choices</h2>
+          <p>Depending on your jurisdiction (e.g., GDPR, CCPA):</p>
+          <ul>
+            <li><strong>Access & Portability:</strong> You can view your journal entries and export your data directly within the app.</li>
+            <li><strong>Revoke Consent:</strong> You may toggle AI conversation consent or withdraw ad consent at any time in the app settings.</li>
+            <li><strong>Microphone & Speech Permissions:</strong> You can revoke microphone and speech recognition permissions at any time via your device's System Settings.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>8. Changes to This Privacy Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Any changes will be posted with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+        </section>
+
+        <section>
+          <h2>9. Contact Us</h2>
+          <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us at:</p>
+          <div class="callout">
+            <p><strong>HQL Global</strong></p>
+            <p>📧 Email: <a href="mailto:privacy@hqlglobal.com">privacy@hqlglobal.com</a> / <a href="mailto:support@hqlglobal.com">support@hqlglobal.com</a></p>
+            <p>🌐 Website: <a href="https://hqlglobal.com" target="_blank" rel="noopener">https://hqlglobal.com</a></p>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <!-- VIETNAMESE CONTENT -->
+    <div id="content-vi" class="lang-content">
+      <article>
+        <section>
+          <h2>1. Giới Thiệu</h2>
+          <p>Chào mừng bạn đến với <strong>GloomyBite</strong>, ứng dụng được phát triển bởi <strong>HQL Global</strong> ("chúng tôi"). GloomyBite là người bạn đồng hành và ứng dụng nhật ký cảm xúc cá nhân giúp bạn giải tỏa âu lo, bày tỏ suy nghĩ và theo dõi cảm xúc cùng bé thú cưng Momo.</p>
+          <p>Chúng tôi tôn trọng quyền riêng tư của bạn và cam kết bảo vệ dữ liệu cá nhân. Chính sách quyền riêng tư này giải thích thông tin nào được thu thập, cách sử dụng và các quyền lựa chọn của bạn khi dùng ứng dụng GloomyBite trên iOS và Android.</p>
+        </section>
+
+        <section>
+          <h2>2. Thông Tin Thu Thập</h2>
+          <h3>A. Thông tin bạn cung cấp trực tiếp</h3>
+          <ul>
+            <li><strong>Ghi âm giọng nói & Âm thanh:</strong> Khi bạn dùng tính năng ghi nhật ký bằng giọng nói, ứng dụng yêu cầu cấp quyền microphone. Âm thanh chỉ được thu âm khi bạn chủ động thao tác. Quá trình nhận diện giọng nói được xử lý trên máy hoặc thông qua dịch vụ hệ điều hành (Apple Speech Recognition / Android Speech Services). Bạn luôn có quyền xem lại hoặc hủy văn bản trước khi lưu.</li>
+            <li><strong>Nhật ký & Hội thoại với Momo:</strong> Những dòng tâm sự, suy ngẫm và tin nhắn trao đổi cùng Momo. Dữ liệu này được lưu trữ an toàn ngay trên thiết bị của bạn.</li>
+            <li><strong>Tùy chọn người dùng:</strong> Các cài đặt bao gồm quyền hội thoại AI, lịch nhắc nhở và giao diện ứng dụng.</li>
+          </ul>
+
+          <h3>B. Thông tin thu thập tự động</h3>
+          <ul>
+            <li><strong>Dữ liệu phân tích hiệu năng:</strong> Chúng tôi sử dụng giải pháp phân tích tôn trọng quyền riêng tư (<a href="https://posthog.com" target="_blank" rel="noopener">PostHog</a>) nhằm chẩn đoán lỗi, đo lường độ ổn định và cải thiện trải nghiệm người dùng. Dữ liệu này hoàn toàn ẩn danh, không gắn với danh tính thật của bạn.</li>
+            <li><strong>Thông tin kỹ thuật & thiết bị:</strong> Phiên bản hệ điều hành, dòng máy, phiên bản ứng dụng, ngôn ngữ và trạng thái kết nối mạng.</li>
+          </ul>
+
+          <h3>C. Dữ liệu quảng cáo (Google AdMob)</h3>
+          <ul>
+            <li>GloomyBite hiển thị quảng cáo qua nền tảng <strong>Google Mobile Ads (AdMob)</strong>.</li>
+            <li>Chúng tôi sử dụng <strong>Google User Messaging Platform (UMP)</strong> để quản lý sự đồng ý quảng cáo cá nhân hóa theo quy chuẩn quốc tế (EEA, UK, v.v.).</li>
+            <li>AdMob có thể sử dụng mã nhận dạng ẩn danh (IDFA trên iOS nếu được cho phép, hoặc Advertising ID trên Android) để đo lường hiệu quả quảng cáo.</li>
+            <li>Bạn có thể thay đổi lựa chọn quyền riêng tư quảng cáo bất cứ lúc nào trong mục <strong>Cài đặt > Quyền riêng tư quảng cáo</strong>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Mục Đích Sử Dụng Thông Tin</h2>
+          <p>Chúng tôi sử dụng thông tin thu thập chỉ nhằm các mục đích:</p>
+          <ol style="margin-left: 20px; margin-bottom: 16px;">
+            <li>Vận hành, duy trì và nâng cao trải nghiệm thú cưng và viết nhật ký GloomyBite.</li>
+            <li>Chuyển đổi giọng nói thành văn bản để bạn xem lại và chỉnh sửa.</li>
+            <li>Hiển thị tiện ích Widget và thông báo nhắc nhở nội bộ trên thiết bị.</li>
+            <li>Chẩn đoán sự cố gián đoạn ứng dụng và tối ưu hóa hiệu năng kỹ thuật.</li>
+            <li>Hiển thị quảng cáo phù hợp với tùy chọn đồng ý của bạn.</li>
+          </ol>
+
+          <div class="callout green">
+            <strong>Cam kết bảo mật của chúng tôi:</strong>
+            <ul>
+              <li>Chúng tôi <strong>KHÔNG</strong> bán nhật ký hay bản ghi âm của bạn cho bất kỳ bên thứ ba nào.</li>
+              <li>Chúng tôi <strong>KHÔNG</strong> sử dụng nhật ký riêng tư của bạn để huấn luyện các mô hình AI công cộng.</li>
+              <li>Chúng tôi <strong>KHÔNG</strong> truy cập microphone khi bạn không chủ động bật tính năng ghi âm.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>4. Dịch Vụ Của Bên Thứ Ba</h2>
+          <p>GloomyBite tích hợp các dịch vụ bên thứ ba đáng tin cậy:</p>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nhà cung cấp</th>
+                  <th>Mục đích</th>
+                  <th>Chính sách bảo mật</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Google Mobile Ads (AdMob & UMP)</strong></td>
+                  <td>Hiển thị quảng cáo và quản lý chấp thuận người dùng</td>
+                  <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính sách Google</a></td>
+                </tr>
+                <tr>
+                  <td><strong>PostHog</strong></td>
+                  <td>Phân tích ẩn danh và chẩn đoán sự cố ứng dụng</td>
+                  <td><a href="https://posthog.com/privacy" target="_blank" rel="noopener">Chính sách PostHog</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Apple Speech & Google Speech</strong></td>
+                  <td>Nhận dạng giọng nói thành văn bản</td>
+                  <td>Khung dịch vụ gốc của hệ điều hành</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>5. Lưu Trữ, Thời Hạn và An Toàn Dữ Liệu</h2>
+          <ul>
+            <li><strong>Lưu trữ trên thiết bị:</strong> Nhật ký và dữ liệu tiện ích của bạn được bảo vệ trong bộ nhớ an toàn của thiết bị (iOS Keychain / App Group Sandbox, và Android Secure App Storage).</li>
+            <li><strong>Mã hóa đường truyền:</strong> Mọi kết nối mạng giữa ứng dụng và máy chủ đều sử dụng giao thức bảo mật cao cấp (HTTPS/TLS). Mọi kết nối văn bản thuần (Cleartext HTTP) đều bị chặn hoàn toàn.</li>
+            <li><strong>Xóa dữ liệu:</strong> Bạn có quyền xóa toàn bộ nhật ký, đặt lại trí nhớ của Momo hoặc thu hồi quyền AI bất kỳ lúc nào ngay trong mục <strong>Cài đặt</strong>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>6. Quyền Riêng Tư Của Trẻ Em</h2>
+          <p>GloomyBite hướng đến đối tượng người dùng phổ thông và không chủ đích nhắm tới trẻ em dưới 13 tuổi (hoặc dưới 16 tuổi tùy theo quy định của từng quốc gia). Chúng tôi không cố ý thu thập thông tin định danh cá nhân của trẻ em.</p>
+        </section>
+
+        <section>
+          <h2>7. Quyền Lợi và Lựa Chọn Của Bạn</h2>
+          <ul>
+            <li><strong>Xem & Xuất dữ liệu:</strong> Bạn có thể dễ dàng xem và xuất dữ liệu nhật ký trực tiếp từ trong ứng dụng.</li>
+            <li><strong>Thu hồi sự đồng ý:</strong> Bạn có thể bật/tắt quyền tương tác hội thoại AI hoặc điều chỉnh chấp thuận quảng cáo bất kỳ lúc nào.</li>
+            <li><strong>Quyền Microphone:</strong> Bạn có thể thu hồi quyền truy cập microphone trong mục Cài đặt hệ thống của điện thoại.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>8. Thay Đổi Chính Sách</h2>
+          <p>Chúng tôi có thể cập nhật Chính sách quyền riêng tư này theo thời gian. Mọi thay đổi sẽ được cập nhật kèm mốc thời gian "Cập nhật lần cuối".</p>
+        </section>
+
+        <section>
+          <h2>9. Thông Tin Liên Hệ</h2>
+          <p>Nếu bạn có bất kỳ câu hỏi hoặc khiếu nại nào liên quan đến chính sách này, xin vui lòng liên hệ:</p>
+          <div class="callout">
+            <p><strong>HQL Global</strong></p>
+            <p>📧 Email: <a href="mailto:privacy@hqlglobal.com">privacy@hqlglobal.com</a> / <a href="mailto:support@hqlglobal.com">support@hqlglobal.com</a></p>
+            <p>🌐 Website: <a href="https://hqlglobal.com" target="_blank" rel="noopener">https://hqlglobal.com</a></p>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      <p>© 2026 GloomyBite by HQL Global. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      const enBtn = document.getElementById('btn-en');
+      const viBtn = document.getElementById('btn-vi');
+      const enContent = document.getElementById('content-en');
+      const viContent = document.getElementById('content-vi');
+      const titleText = document.getElementById('title-text');
+
+      const card1Title = document.getElementById('card1-title');
+      const card1Desc = document.getElementById('card1-desc');
+      const card2Title = document.getElementById('card2-title');
+      const card2Desc = document.getElementById('card2-desc');
+      const card3Title = document.getElementById('card3-title');
+      const card3Desc = document.getElementById('card3-desc');
+
+      if (lang === 'vi') {
+        enBtn.classList.remove('active');
+        viBtn.classList.add('active');
+        enContent.classList.remove('active');
+        viContent.classList.add('active');
+        titleText.textContent = 'Chính Sách Quyền Riêng Tư';
+        document.documentElement.lang = 'vi';
+
+        card1Title.textContent = 'Lưu Trữ Riêng Tư Cục Bộ';
+        card1Desc.textContent = 'Nhật ký và bản ghi được lưu an toàn trên máy của bạn (iOS Keychain & vùng nhớ bảo mật).';
+        card2Title.textContent = 'Không Bán Dữ Liệu';
+        card2Desc.textContent = 'Chúng tôi không bao giờ bán dữ liệu tâm tư cá nhân hay dùng để huấn luyện AI công cộng.';
+        card3Title.textContent = 'Toàn Quyền Kiểm Soát';
+        card3Desc.textContent = 'Chủ động xuất dữ liệu, xóa toàn bộ nhật ký hoặc thu hồi quyền AI bất kỳ lúc nào.';
+      } else {
+        viBtn.classList.remove('active');
+        enBtn.classList.add('active');
+        viContent.classList.remove('active');
+        enContent.classList.add('active');
+        titleText.textContent = 'Privacy Policy';
+        document.documentElement.lang = 'en';
+
+        card1Title.textContent = 'Local & Secure Storage';
+        card1Desc.textContent = 'Your journal entries and audio transcripts are saved securely on your device (iOS Keychain & secure sandbox).';
+        card2Title.textContent = 'Zero Data Selling';
+        card2Desc.textContent = 'We never sell personal reflections or voice notes to third parties, nor use them to train public AI models.';
+        card3Title.textContent = 'Complete User Control';
+        card3Desc.textContent = 'Toggle AI consent, withdraw ad consent, export, or permanently delete your diary anytime in Settings.';
+      }
+    }
+
+    // Auto-detect browser language if Vietnamese
+    try {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang && userLang.toLowerCase().startsWith('vi')) {
+        setLanguage('vi');
+      }
+    } catch (e) {}
+  </script>
+</body>
+</html>
