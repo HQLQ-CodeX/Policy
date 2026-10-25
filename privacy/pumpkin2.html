@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Pumpkin Survivor</title>
+  <meta name="description" content="Privacy Policy for Pumpkin Survivor mobile game on iOS and Android.">
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --primary: #ea580c;
+      --primary-hover: #c2410c;
+      --border-color: #e2e8f0;
+      --code-bg: #f1f5f9;
+      --badge-bg: #ffedd5;
+      --badge-text: #9a3412;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0f172a;
+        --card-bg: #1e293b;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --primary: #f97316;
+        --primary-hover: #fb923c;
+        --border-color: #334155;
+        --code-bg: #0f172a;
+        --badge-bg: #431407;
+        --badge-text: #fdba74;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text-main);
+      background-color: var(--bg-color);
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 36px 32px 20px;
+      border-bottom: 1px solid var(--border-color);
+      background: linear-gradient(180deg, rgba(234, 88, 12, 0.04) 0%, transparent 100%);
+    }
+
+    .header-badge {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      margin-bottom: 12px;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .id-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 12px;
+      font-size: 0.92rem;
+    }
+
+    .id-table th, .id-table td {
+      border: 1px solid var(--border-color);
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    .id-table th {
+      background-color: var(--code-bg);
+      color: var(--text-main);
+      width: 32%;
+      font-weight: 600;
+    }
+
+    code {
+      background-color: var(--code-bg);
+      color: var(--primary);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+    }
+
+    .lang-tabs {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .lang-btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--card-bg);
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .content {
+      padding: 32px;
+    }
+
+    .section-lang {
+      display: none;
+    }
+
+    .section-lang.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-main);
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .info-box {
+      background-color: var(--code-bg);
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin: 18px 0;
+      font-size: 0.95rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--code-bg);
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 24px 32px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      background-color: var(--code-bg);
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 24px 20px;
+      }
+      .content {
+        padding: 24px 20px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="header-badge">Legal Documentation</div>
+      <h1>Privacy Policy</h1>
+      
+      <!-- IDENTIFIER TABLE FOR STORE CRAWLERS -->
+      <table class="id-table">
+        <tr>
+          <th>Application Listing Name</th>
+          <td><strong>Pumpkin Survivor</strong> (Pumpkin Survivor: Roguelite)</td>
+        </tr>
+        <tr>
+          <th>Localized Titles</th>
+          <td>Pumpkin Survivor: Sinh Tồn</td>
+        </tr>
+        <tr>
+          <th>Package Name / Bundle ID</th>
+          <td><code>com.hqlglobal.pumpkinsurvivor</code></td>
+        </tr>
+        <tr>
+          <th>Developer / Publisher</th>
+          <td><strong>HQL Global</strong> / <strong></strong></td>
+        </tr>
+        <tr>
+          <th>Contact Email</th>
+          <td><a href="mailto:haonx.vn@gmail.com">haonx.vn@gmail.com</a></td>
+        </tr>
+        <tr>
+          <th>Effective Date</th>
+          <td>October 24, 2026</td>
+        </tr>
+      </table>
+
+      <div class="lang-tabs">
+        <button class="lang-btn active" onclick="switchLang('en', this)">English (Global Store Standard)</button>
+        <button class="lang-btn" onclick="switchLang('vi', this)">Tiếng Việt</button>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <!-- ================= ENGLISH VERSION ================= -->
+      <section id="lang-en" class="section-lang active">
+        <div class="info-box">
+          This Privacy Policy explains how <strong>Pumpkin Survivor</strong> ("the Game", "we", "us", or "our") collects, uses, and discloses information when you install, play, and interact with our mobile game on Android (Google Play) and iOS (Apple App Store).
+        </div>
+
+        <h2>1. Overview & Core Philosophy</h2>
+        <p>
+          We respect your privacy. <strong>Pumpkin Survivor</strong> does not require user account registration, login credentials, or personally identifiable information (such as your legal name, physical address, email address, or phone number) to play the game.
+        </p>
+        <p>
+          Most core game features can be enjoyed offline. When your device is connected to the Internet, the game interacts with reputable third-party SDKs to provide gameplay analytics, advertisements, and optional in-app purchases.
+        </p>
+
+        <h2>2. Information We Collect and How We Collect It</h2>
+        <p>We collect information in the following categories:</p>
+
+        <h3>A. Gameplay & Progress Data (Stored Locally)</h3>
+        <ul>
+          <li><strong>Game State & Progression:</strong> Gold, Candy balance, unlocked characters, skill evolutions, talent upgrades, high scores, and audio/language settings are stored locally on your device storage.</li>
+          <li>We do not sync or store your local save files on external custom servers.</li>
+        </ul>
+
+        <h3>B. Technical and Device Information (Anonymous Analytics)</h3>
+        <p>To improve game balance, fix performance bottlenecks, and resolve crashes, we use <strong>PostHog Analytics</strong>. The data collected includes:</p>
+        <ul>
+          <li><strong>Randomized Device Identifier:</strong> A unique pseudo-anonymous GUID generated locally upon first installation (`distinct_id`). This identifier is not linked to your real identity.</li>
+          <li><strong>Device & OS Specifications:</strong> Device model, operating system version, game version, and system language.</li>
+          <li><strong>In-Game Telemetry Events:</strong> Stage start/completion, survival duration, defeat causes, boss completions, level-up choices, and in-game economy actions (gold/candy earned or spent).</li>
+          <li><strong>IP Address Handling:</strong> Client IP data is automatically discarded and not retained in analytics dashboards.</li>
+        </ul>
+        <p>
+          <em>Opt-Out Option:</em> You can disable analytics data collection anytime via: <strong>Settings &rarr; Share Analytics (Turn OFF)</strong>.
+        </p>
+
+        <h3>C. In-App Purchases (IAP)</h3>
+        <p>The game offers optional in-app purchases (such as Candy packs and No-Ads package). We use <strong>RevenueCat</strong> to facilitate in-app purchase validation:</p>
+        <ul>
+          <li><strong>Payment Processing:</strong> All transactions are processed directly by Apple (App Store) or Google (Google Play Store). We never access or store your credit card or financial details.</li>
+          <li><strong>Purchase Validation:</strong> RevenueCat receives anonymous transaction receipts to verify purchase status, grant in-game entitlements, and support the "Restore Purchases" feature.</li>
+        </ul>
+
+        <h3>D. Advertisements</h3>
+        <p>To support free access, the game integrates Rewarded and Interstitial ads via <strong>Google AdMob</strong>:</p>
+        <ul>
+          <li>Google AdMob may process your device's advertising identifier (GAID on Android or IDFA on iOS if tracking permission is granted) to deliver relevant ads and combat ad fraud.</li>
+          <li><strong>GDPR / Consent Management (EEA/UK):</strong> We display the Google User Messaging Platform (UMP) consent dialog on initial launch. You can update your consent preferences anytime via <strong>Settings &rarr; Privacy Options</strong>.</li>
+          <li><strong>No Ads Package:</strong> Purchasing the No Ads package removes interstitial ads and lets you claim rewarded bonuses immediately without viewing video ads.</li>
+        </ul>
+
+        <h2>3. Third-Party Service Providers</h2>
+        <p>The game incorporates official SDKs from the following reputable providers. Please review their privacy policies for further details:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Purpose</th>
+              <th>Privacy Policy Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Google AdMob</strong></td>
+              <td>In-game advertising network & consent management (UMP)</td>
+              <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+            </tr>
+            <tr>
+              <td><strong>RevenueCat</strong></td>
+              <td>In-app purchase validation & receipt verification</td>
+              <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></td>
+            </tr>
+            <tr>
+              <td><strong>PostHog</strong></td>
+              <td>Anonymous game telemetry and performance monitoring</td>
+              <td><a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog Privacy Policy</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>4. Data Retention and Security</h2>
+        <ul>
+          <li>All network communications between our third-party SDK partners and their backend servers use secure HTTPS/TLS encryption. Local game data is stored in your device's protected app sandbox.</li>
+          <li>Local gameplay data remains on your device until you clear the application data or uninstall the application.</li>
+          <li>Telemetry data collected by analytics is stored on secured servers and retained only as long as necessary for game optimization.</li>
+        </ul>
+
+        <h2>5. Children's Privacy</h2>
+        <p>
+          <strong>Pumpkin Survivor</strong> is designed for general audiences (rated PEGI 7 / Everyone 10+ / iOS 9+). We do not knowingly collect personal identifiable information from children under the age of 13 (or under 16 in the European Union).
+        </p>
+        <p>
+          If you believe a child has provided us with personal information without parental consent, please contact us immediately, and we will take prompt steps to remove such information.
+        </p>
+
+        <h2>6. Your Rights and Choices</h2>
+        <p>Depending on your jurisdiction (such as GDPR in Europe or CCPA/CPRA in California), you have rights regarding your data:</p>
+        <ul>
+          <li><strong>Turn Off Analytics:</strong> In the game's Settings menu, toggle off <em>"Share Analytics"</em>.</li>
+          <li><strong>Revoke Ad Consent:</strong> In the game's Settings menu, click <em>"Privacy Options"</em> to reopen the consent form and adjust your choices.</li>
+          <li><strong>Delete Game Data:</strong> Uninstalling the application removes all local game saves and resets local identifiers.</li>
+          <li><strong>Right to Inquire / Data Deletion:</strong> You can contact us at our support email below to request information or request deletion of data associated with your anonymous ID.</li>
+        </ul>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be published on this page with an updated "Effective Date" at the top. We encourage you to review this policy periodically.
+        </p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions, feedback, or requests regarding this Privacy Policy, please reach out to us:</p>
+        <div class="info-box">
+          <strong>Developer / Publisher:</strong> HQL Global / <br>
+          <strong>Game:</strong> Pumpkin Survivor<br>
+          <strong>Support Email:</strong> <a href="mailto:haonx.vn@gmail.com">haonx.vn@gmail.com</a>
+        </div>
+      </section>
+
+      <!-- ================= VIETNAMESE VERSION ================= -->
+      <section id="lang-vi" class="section-lang">
+        <div class="info-box">
+          Chính sách quyền riêng tư này giải thích cách <strong>Pumpkin Survivor</strong> ("Trò chơi", "chúng tôi") thu thập, sử dụng và bảo vệ thông tin khi bạn cài đặt và trải nghiệm trò chơi trên hệ điều hành Android (Google Play) và iOS (Apple App Store).
+        </div>
+
+        <h2>1. Tổng quan & Nguyên tắc cốt lõi</h2>
+        <p>
+          Chúng tôi luôn tôn trọng quyền riêng tư của người chơi. <strong>Pumpkin Survivor</strong> không yêu cầu đăng ký tài khoản, không yêu cầu cung cấp thông tin định danh cá nhân (như họ tên thật, địa chỉ nhà, email cá nhân hay số điện thoại) để bắt đầu chơi.
+        </p>
+        <p>
+          Bạn có thể chơi trọn vẹn phần lớn các chế độ chơi ở trạng thái offline (không cần mạng). Khi thiết bị có kết nối Internet, game sẽ tương tác với một số dịch vụ bên thứ ba để hiển thị quảng cáo, phân tích hiệu năng game và hỗ trợ mua vật phẩm trong ứng dụng.
+        </p>
+
+        <h2>2. Thông tin được thu thập và mục đích sử dụng</h2>
+
+        <h3>A. Dữ liệu chơi game & Lưu trữ tiến trình (Lưu cục bộ)</h3>
+        <ul>
+          <li><strong>Tiến trình chơi:</strong> Số vàng, kẹo, nhân vật đã mở khóa, nâng cấp kỹ năng, cây thiên phú và cài đặt ngôn ngữ/âm thanh được lưu trữ trực tiếp trên bộ nhớ thiết bị của bạn.</li>
+          <li>Chúng tôi không lưu trữ hay đồng bộ file save của bạn lên bất kỳ máy chủ riêng biệt nào.</li>
+        </ul>
+
+        <h3>B. Thông tin kỹ thuật & Phân tích gameplay (PostHog Analytics)</h3>
+        <p>Để theo dõi độ cân bằng game, sửa lỗi crash và cải thiện trải nghiệm, chúng tôi sử dụng công cụ phân tích <strong>PostHog</strong>:</p>
+        <ul>
+          <li><strong>Mã định danh ngẫu nhiên (GUID):</strong> Một chuỗi ngẫu nhiên (`distinct_id`) được tạo tự động khi bạn cài game lần đầu. Chuỗi này hoàn toàn ẩn danh và không liên kết với danh tính cá nhân.</li>
+          <li><strong>Thông số thiết bị:</strong> Dòng máy, phiên bản hệ điều hành, ngôn ngữ máy và phiên bản game.</li>
+          <li><strong>Sự kiện trong game:</strong> Bắt đầu màn chơi, thời lượng sống sót, nguyên nhân thua, chọn thẻ nâng cấp, tiêu dùng kẹo/vàng trong game.</li>
+          <li><strong>Bảo mật địa chỉ IP:</strong> Cấu hình hệ thống tự động loại bỏ và không lưu trữ địa chỉ IP của người dùng.</li>
+        </ul>
+        <p>
+          <em>Quyền tắt phân tích:</em> Bạn có thể chủ động tắt chia sẻ dữ liệu phân tích bất cứ lúc nào trong: <strong>Cài đặt (Settings) &rarr; Chia sẻ phân tích (Share Analytics: TẮT)</strong>.
+        </p>
+
+        <h3>C. Giao dịch mua vật phẩm trong ứng dụng (In-App Purchase)</h3>
+        <p>Game cung cấp các gói mua vật phẩm tùy chọn (như gói Kẹo, gói Gỡ quảng cáo No Ads). Chúng tôi sử dụng <strong>RevenueCat</strong> để quản lý gói mua:</p>
+        <ul>
+          <li><strong>Thanh toán an toàn:</strong> Toàn bộ quá trình thanh toán bằng thẻ hay ví điện tử được xử lý trực tiếp bởi Apple App Store hoặc Google Play Store. Chúng tôi tuyệt đối không tiếp cận hay lưu trữ bất kỳ thông tin thẻ ngân hàng nào của bạn.</li>
+          <li><strong>Xác thực gói mua:</strong> RevenueCat nhận biên lai kỹ thuật số và mã giao dịch từ kho ứng dụng để cấp quyền vật phẩm trong game và hỗ trợ khôi phục giao dịch (Restore Purchases).</li>
+        </ul>
+
+        <h3>D. Quảng cáo trong game (Google AdMob)</h3>
+        <p>
+          Để duy trì trải nghiệm miễn phí, game tích hợp quảng cáo có thưởng (Rewarded Ads) và quảng cáo xen kẽ (Interstitial Ads) qua <strong>Google AdMob</strong>:
+        </p>
+        <ul>
+          <li>Google AdMob có thể sử dụng mã nhận dạng quảng cáo (IDFA trên iOS hoặc GAID trên Android) cùng dữ liệu tương tác để phân phối quảng cáo và phòng chống gian lận.</li>
+          <li><strong>Quyền riêng tư GDPR / UMP:</strong> Đối với người chơi tại khu vực Châu Âu (EEA/UK), biểu mẫu Google UMP sẽ hiển thị để bạn tùy chọn đồng ý hoặc từ chối quảng cáo cá nhân hóa. Bạn có thể mở lại biểu mẫu này bất kỳ lúc nào qua nút <strong>Tùy chọn quyền riêng tư (Privacy Options)</strong> trong phần Cài đặt.</li>
+          <li><strong>Người mua gói No Ads:</strong> Sẽ không hiển thị quảng cáo xen kẽ và nhận ngay quà tặng có thưởng mà không phải xem quảng cáo.</li>
+        </ul>
+
+        <h2>3. Các đối tác cung cấp dịch vụ bên thứ ba</h2>
+        <p>Trò chơi tích hợp các SDK chính thức sau, bạn có thể tham khảo chính sách riêng của từng đơn vị:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Dịch vụ</th>
+              <th>Mục đích</th>
+              <th>Liên kết chính sách</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Google AdMob</strong></td>
+              <td>Mạng lưới phân phối quảng cáo trong game</td>
+              <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính sách bảo mật Google</a></td>
+            </tr>
+            <tr>
+              <td><strong>RevenueCat</strong></td>
+              <td>Quản lý giao dịch và kích hoạt vật phẩm In-App Purchase</td>
+              <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Chính sách bảo mật RevenueCat</a></td>
+            </tr>
+            <tr>
+              <td><strong>PostHog</strong></td>
+              <td>Phân tích ẩn danh hiệu năng và cân bằng gameplay</td>
+              <td><a href="https://posthog.com/privacy" target="_blank" rel="noopener">Chính sách bảo mật PostHog</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>4. Bảo mật và Thời gian lưu trữ dữ liệu</h2>
+        <ul>
+          <li>Mọi kết nối truyền tải dữ liệu đều được mã hóa theo tiêu chuẩn HTTPS/TLS. File dữ liệu trong máy được bảo vệ chống can thiệp.</li>
+          <li>Dữ liệu game offline được lưu trên máy của bạn và sẽ bị xóa khi bạn gỡ ứng dụng hoặc xóa dữ liệu bộ nhớ app.</li>
+          <li>Dữ liệu phân tích ẩn danh được lưu trữ trong môi trường máy chủ bảo mật và chỉ phục vụ việc cải thiện chất lượng trò chơi.</li>
+        </ul>
+
+        <h2>5. Quyền riêng tư của trẻ em</h2>
+        <p>
+          <strong>Pumpkin Survivor</strong> là trò chơi giải trí lành mạnh (phân loại PEGI 7 / Everyone 10+ / iOS 9+). Chúng tôi không cố ý thu thập dữ liệu cá nhân của trẻ em dưới 13 tuổi (hoặc dưới 16 tuổi tại EU). Nếu phụ huynh phát hiện bất kỳ thông tin nào được gửi mà không có sự đồng ý của cha mẹ, xin vui lòng liên hệ với chúng tôi để xóa ngay lập tức.
+        </p>
+
+        <h2>6. Quyền lợi của bạn</h2>
+        <ul>
+          <li><strong>Tắt thu thập phân tích:</strong> Vào Cài đặt &rarr; gạt tắt mục <em>"Share Analytics"</em>.</li>
+          <li><strong>Điều chỉnh đồng ý quảng cáo:</strong> Vào Cài đặt &rarr; chọn <em>"Privacy Options"</em> để thay đổi lựa chọn chia sẻ dữ liệu với Google.</li>
+          <li><strong>Xóa toàn bộ dữ liệu:</strong> Bạn chỉ cần gỡ cài đặt ứng dụng khỏi điện thoại để xóa mọi dữ liệu lưu trữ cục bộ.</li>
+          <li><strong>Yêu cầu hỗ trợ:</strong> Liên hệ email hỗ trợ của chúng tôi để yêu cầu giải đáp hoặc xử lý thông tin liên quan.</li>
+        </ul>
+
+        <h2>7. Thay đổi chính sách</h2>
+        <p>
+          Chính sách này có thể được cập nhật theo thời gian để phản ánh các thay đổi trong quy định hoặc tính năng mới. Mọi cập nhật sẽ được thông báo trực tiếp trên trang này cùng ngày có hiệu lực.
+        </p>
+
+        <h2>8. Thông tin liên hệ</h2>
+        <div class="info-box">
+          <strong>Nhà phát triển / Phát hành:</strong> HQL Global <br>
+          <strong>Tên trò chơi:</strong> Pumpkin Survivor<br>
+          <strong>Email hỗ trợ:</strong> <a href="mailto:haonx.vn@gmail.com">haonx.vn@gmail.com</a>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      &copy; 2026 Pumpkin Survivor &bull; HQL Global / . All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang, btn) {
+      document.querySelectorAll('.section-lang').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+
+      var targetSection = document.getElementById('lang-' + lang);
+      if (targetSection) {
+        targetSection.classList.add('active');
+      }
+
+      if (btn) {
+        btn.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
